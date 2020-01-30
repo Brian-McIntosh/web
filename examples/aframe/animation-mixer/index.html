@@ -43,15 +43,6 @@
             nextButton.onclick = nextAnimation // Switch to the next animation when the button is pressed.
           }
         })
-
-        // OVERRIDE 8th Wall Logo
-        AFRAME.registerComponent('customize-loading-icon', {
-        init: function() {
-          console.log('customizing loading spinner')
-          document.getElementById("loadImage").src="fordlogo.png"
-          document.getElementById("loadImage").classList.remove("rotate-center")
-        }
-      })
     </script>
   </head>
   <body>
@@ -63,7 +54,6 @@
       gesture-detector
       xrextras-almost-there
       xrextras-loading
-      customize-loading-icon
       xrextras-runtime-error>
 
       <!-- We can define assets here to be loaded when A-Frame initializes -->
